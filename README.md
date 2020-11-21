@@ -1,1 +1,2 @@
-# DRNet_Segmentation_Localization_OD_Fovea
+# DRNet: Segmentation of OD and Localization OD and Fovea Centers
+In modern ophthalmology, automated Computer-aided Screening Tools (CSTs) are crucial non-intrusive diagnosis methods, where an accurate segmentation of Optic Disc (OD) and localization of OD and Fovea centers are substantial integral parts. However, designing such an automated tool remains challenging due to small dataset sizes, inconsistency in spatial, texture, and shape information of the OD and Fovea, and the presence of different artifacts.
