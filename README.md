@@ -6,14 +6,14 @@ This article proposes an end-to-end encoder-decoder network, named DRNet, for th
 <img src="https://user-images.githubusercontent.com/32570071/99866548-42e47500-2bdc-11eb-9933-c5c51e16cca6.png" width="800" height="300">
 
 
-## Contribution:
+## Contribution
 1.	Proposed an automated CNN-based encoder-decoder network, called DRNet (Diabetic Retinopathy Network), for both segmentation and localization of the OD and Fovea, which substantially alleviates the necessity of manual parameter tuning while being an end-to-end system.
 2.	The proposed DRNet has a U-shaped structure with newly proposed skip connections, called residual skip connections.
 3.	Unlike earlier skip connections as in UNet, the new residual skip connection will not directly aggregate low-level features from the previous layers of the encoder with the corresponding same scale decoder since skipping features are passed through several convolutional layers and merged with the non-zero regularizing skipping path.
 4.	To avoid primary dependence on the object’s shape on a binary mask, we create a 2D heatmap, having Gaussian-shaped intensity distribution.
 5.	Publicly available datasets are used for open-source implementations.
 
-## Utilized datasets with source link:
+## Utilized datasets with source link
 
 | Different datasets                                                                  | Resolution | FoV | Bit depth |  OD center localization |  Fovea center localization | OD mask segmentation |
 |-------------------------------------------------------------------------------------|:----------:|:---:|:---------:|:-----------------------:|:--------------------------:|:--------------------:|
