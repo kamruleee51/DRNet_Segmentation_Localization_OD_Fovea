@@ -15,7 +15,13 @@ This article proposes an end-to-end encoder-decoder network, named DRNet, for th
 
 ## Utilized datasets with source link:
 
-
+| Different datasets                                                                  | Resolution | FoV | Bit depth |  OD center localization |  Fovea center localization | OD mask segmentation |
+|-------------------------------------------------------------------------------------|:----------:|:---:|:---------:|:-----------------------:|:--------------------------:|:--------------------:|
+| [IDRiD](https://idrid.grand-challenge.org/)                                         |  4288×2848 | 50° |  24-bits  |           516           |             516            |          81          |
+| [RIMONE](http://medimrg.webs.ull.es/research/downloads/)                            |  1072×1424 |  -- |  24-bits  |            --           |             --             |          169         |
+| [DRISHTI-GS](https://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php) |  2896×1944 | 30° |  24-bits  |            --           |             --             |          101         |
+| [DRIVE](https://drive.grand-challenge.org/)                                         |   786×584  | 30° |   8-bits  |            --           |             --             |          40          |
+| [HRF](http://www5.cs.fau.de/research/data/fundus-images/)                           |  3504×2336 | 45° |  24-bits  |            45           |             --             |          --          |
 
 
 
@@ -34,7 +40,7 @@ All the results reported in the literature were produced using the following ver
 </ul>
 The proposed DRNet, for OD segmentation, achieves mean Intersection over Union (mIoU) of 0.845, 0.901, 0.933, and 0.920 for IDRiD, RIMONE, DRISHTI-GS, and DRIVE, respectively. Our OD segmentation result, in terms of mIoU, outperforms the state-of-the-art results for IDRiD and DRIVE datasets, whereas it outperforms state-of-the-art results concerning mean sensitivity for RIMONE and DRISHTI-GS datasets. The DRNet localizes the OD center with mean Euclidean Distance (mED) of 20.23 and 13.34 pixels, respectively, for IDRiD and HRF datasets; it outperforms the state-of-the-art by 4.62 pixels for IDRiD dataset. The DRNet also successfully localizes the Fovea center with mED of 41.87 pixels for the IDRiD dataset, outperforming the state-of-the-art by 1.59 pixels for the same dataset. As the proposed DRNet exhibits excellent performance even with limited training data and without intermediate intervention, it can be employed to design a better-CST system to screen retinal images. <br>
 
-
+<br> 
 
 **Written by**<br>
 **Md. Kamrul Hasan**  <br>
